@@ -1,0 +1,93 @@
+.container-pet{
+
+    display: grid;
+    row-gap: 30px;
+}
+
+.container-sub{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px hsla(12, 32%, 8%, .6); 
+
+}
+img{
+    align-self: center;
+}
+
+
+.tombol{
+    display: flex;
+    justify-content: space-between ;
+    width:600px;
+
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.balik{
+    background-color: brown;
+    padding: 10px;
+}
+.isilagi{
+    background-color: brown;
+    padding: 10px;
+}
+
+a{
+    height:50px;
+    text-decoration: none;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    color: White;
+    transition: box-shadow .3s, transform .3s;
+
+}
+
+a:hover{
+    background-color: chartreuse;
+    box-shadow: 0 8px 32px hsla(12, 32%, 8%, .6); 
+    transform: translateY(.35rem);
+}
+
+.footer{
+    background-color: blueviolet;
+    padding-left: 20px;
+    margin-top: 100px;
+}
+
+.icon{
+   font-size: 50px; 
+}
+
+
+@media screen and (max-width:1024px){
+    .container-sub{
+        width: 450px;
+        padding: 10px 10px;
+    }
+    .footer{
+        width: 440px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .tombol{
+        width: 450px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    a{
+        font-size: 15px;
+    }
+}

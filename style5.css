@@ -1,0 +1,142 @@
+
+
+.form_content{
+
+    margin-top: 40px;
+}
+
+form{
+
+    padding-top: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}  
+.data{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.data_hewan{
+    display: grid;
+    row-gap: 15px;
+    background-color: brown;
+    width: 450px ;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 1px solid aqua;
+    border-radius: 20px;
+    padding-right: 20px;
+    color: white;
+    box-shadow: 0 12px 24px hsla(10, 21%, 42%, 0.5);
+    background: linear-gradient(180deg,
+                hsl(39,62%,75%) 0%,
+                hsl(39,62%,45%) 100%);
+
+}
+
+.data_pemilik{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    background: linear-gradient(180deg,
+                hsl(39,62%,75%) 0%,
+                hsl(39,62%,45%) 100%);
+    width: 450px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 1px solid aqua;
+    border-radius: 20px;
+    color:white;
+    box-shadow: 0 12px 24px hsla(10, 21%, 42%, 0.5);
+
+}
+.submit{
+    margin-top: 300px;
+}
+.submit input{
+    border: 2px solid red;
+    height: 50px;
+    border: 2px solid bisque;
+    border-radius: 20px;
+    transition: box-shadow .3s, transform .3s;
+}
+
+.submit input:hover{
+    background-color: chartreuse;
+    box-shadow: 0 8px 32px hsla(12, 32%, 8%, .6); 
+    transform: translateY(.35rem);
+}
+
+h2{
+    text-align: center;
+}
+
+a{
+    margin: 20px 20px;
+    text-decoration: none;
+
+}
+
+input{
+    width: 300px;
+    height: 37px;
+    background-color: aqua;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+select{
+    width: 300px;
+    height: 37px;
+    background-color: aqua;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.form_title{
+    text-align: center;
+}
+
+textarea{
+    background-color: aqua;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+
+
+
+@media screen and (max-width:768px){
+    .data{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        row-gap: 20px;
+    }
+
+
+    .data_pemilik{
+        margin: 0 auto;
+    }
+    .data_hewan{
+        margin: 0 auto;
+    }
+
+    .submit{
+        margin:70px auto;
+        padding-left: 77px;
+    }
+    .submit input{
+        height: 60px;
+        width:350px;
+        border: 2px solid bisque;
+        border-radius: 20px;
+        transition: box-shadow .3s, transform .3s;
+        background-color: darkkhaki;
+    }
+}
+
